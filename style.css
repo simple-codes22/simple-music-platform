@@ -1,0 +1,159 @@
+* {
+    margin:0;
+    font-family:"Noto Sans JP", sans-serif;
+    background-color: transparent;
+    animation: intro 2s ease;
+}
+.nav {
+    display: flex;
+    background:linear-gradient(to left,black,  rgb(31, 31, 31), rgb(23, 12, 83));
+    color:white;
+    position: sticky;
+    position: -webkit-sticky;
+    height:55px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.image {
+    margin-right: 45%;
+    cursor:pointer;
+    width:170px;
+    /* height:30px; */
+}
+
+.list {
+    list-style: none;
+}
+.links {
+    display: inline;
+    
+}
+.anchor {
+    text-decoration: none;
+    color:currentColor;
+    margin-right: 20px;
+    padding:4px;
+    border-radius: 2px;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+.anchor:hover {
+    color:rgb(31, 31, 31);
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 30px rgb(209, 117, 117);
+}
+.play:hover {
+    background-color:rgb(76, 223, 132)
+}
+.anchor:last-child {
+    margin-right: 30px;
+}
+
+.first {
+    background: url('img/stage-mic.jpg') no-repeat fixed center;
+    background-size:cover;
+    height:700px;
+}
+.first > .welcome {
+    color:white;
+    /* font-family: ; */
+    animation:intro-2 4s ease-in-out;
+    font-size: x-large;
+    position:absolute;
+    top: 290px;
+    left: 65vw;
+    width:230px;
+    /* text-align: justify; */
+}
+.emp {
+    /* font-family: ; */
+    font-weight:600;
+}
+.content {
+    background: rgb(31, 31, 31);
+    color:azure;
+    font-size: x-large;
+}
+.one {
+    padding-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.one > .img-one {
+    width:300px;
+    margin-right: 70px;
+    /* float: right; */
+}
+.get {
+    margin-right: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:white;
+    color:black;
+}
+
+.two > .img-two {
+    width:360px;
+    margin-left: 70px;
+}
+.two > .get {
+    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold::after {
+    content: " ";
+}
+
+@keyframes intro {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes intro-2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@media screen and (max-width:1510px){
+    .links:last-child {
+        display: none;
+    }
+    .one > .get {
+        margin-left: 30px;
+    }
+    .two > .get {
+        width:300px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .links:nth-child(5) {
+        display: none;
+    }
+}
+@media screen and (max-width:1234px) {
+    .links:nth-child(4), .links:nth-child(3) {
+        display: none;
+    }
+    .image {
+        margin-right:50%;
+    }
+}
+@media screen and (max-width:790px) {
+    .links:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:730px) {
+    * {
+        display:none;
+    }
+}
